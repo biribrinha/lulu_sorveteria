@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+main{
+    background-color: #FFE3E3;
+}
+.menu img {
+    width: 250px;
+}
+
+.menu ul{
+    display: flex;
+    text-decoration: none;
+}
+
+.menu li{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.primeiro_banner img{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.segundo_banner img{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+}
