@@ -8,19 +8,28 @@
     <title>Lulu-Sorveteria</title>
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="../../img/icon.png" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <div class="menu">
-            <img src="./img/logo.png" />
-            <ul>
-                <li>Home</li>
-                <li>Nossos produtos</li>
-                <li>Quem somos</li>
-            </ul>
-        </div>
-        
+
+        <img src="./img/logo.png" />
+        <ul>
+            <li>Home</li>
+            <li>Nossos produtos</li>
+            <li>Quem somos</li>
+        </ul>
+
+
     </header>
     <main>
         <section class="primeiro_banner">
@@ -37,16 +46,154 @@
                 <p>Feito com uma receita super secreta que gerou esses sorvetes super especiais e únicos</p>
             </div>
 
-            <div class="banner_produtos1">
-                <img src="./img/bannner3.png" />
-            </div>
-            <div class="banner_produtos2">
-                <img src="./img/bannner4.png" />
+            <div class="row cards">
+                <div class="col-sm-3 space">
+                    <div class="card" style="border-color: #C55634">
+                        <img class="card-img-top" src="./img/sorvete 1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #C55634">Esfoliante</h5>
+                            <p class="card-text" style="color: #C55634">
+                                Para limpar sua pele profundamente, esse aqui é o melhor de todos!
+                            </p>
+                            <!-- Trigger the modal with a button -->
+                            <button type="button" class="btn text-white" data-toggle="modal" data-target="#myModal2"
+                                style="background-color: #7724DA">Mais informações</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal1" role="dialog">
+                                <div class="modal-dialog">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" style="color: #7724DA">Esfoliante 180g</h4>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                style="color: #7724DA">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <span style="color: #ABB3B6">R$ 89,90</span>
+                                            <h5>Motivos para me levar pra casa:</h5>
+                                            <p style="color: #678486">Tenho ativos com ação emoliente e umectante, com
+                                                alto
+                                                poder de
+                                                hidratação. Redução a perda de água e retenho a hidratação natural.
+                                                Textura média e de rápida absorção. Ação prolongada, que dura até 48
+                                                horas.</p>
+                                            <span style="color: #ABB3B6">Em breve nas lojas</span>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default text-white"
+                                                data-dismiss="modal" style="background-color: #7724DA">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    
+
             </div>
 
-            <div class="banner_produtos3">
-                <img src="./img/bannner5.png" />
-            </div>
+
+            <div class="col-sm-3 space">
+                <div class="card" style="border-color: #C55634">
+                    <img class="card-img-top" src="./img/sorvete 2.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #C55634">Esfoliante</h5>
+                        <p class="card-text" style="color: #C55634">
+                            Para limpar sua pele profundamente, esse aqui é o melhor de todos!
+                        </p>
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn text-white" data-toggle="modal" data-target="#myModal2"
+                            style="background-color: #7724DA">Mais informações</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal2" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" style="color: #7724DA">Esfoliante 180g</h4>
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            style="color: #7724DA">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <span style="color: #ABB3B6">R$ 89,90</span>
+                                        <h5>Motivos para me levar pra casa:</h5>
+                                        <p style="color: #678486">Tenho ativos com ação emoliente e umectante, com
+                                            alto
+                                            poder de
+                                            hidratação. Redução a perda de água e retenho a hidratação natural.
+                                            Textura média e de rápida absorção. Ação prolongada, que dura até 48
+                                            horas.</p>
+                                        <span style="color: #ABB3B6">Em breve nas lojas</span>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default text-white"
+                                            data-dismiss="modal" style="background-color: #7724DA">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    
+        
+                    
+                </div>
+
+                
+
+        </div>
+
+        <div class="col-sm-3 space">
+            <div class="card" style="border-color: #C55634">
+                <img class="card-img-top" src="./img/sorvete 3.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: #C55634">Esfoliante</h5>
+                    <p class="card-text" style="color: #C55634">
+                        Para limpar sua pele profundamente, esse aqui é o melhor de todos!
+                    </p>
+                    <!-- Trigger the modal with a button -->
+                    <button type="button" class="btn text-white" data-toggle="modal" data-target="#myModal2"
+                        style="background-color: #7724DA">Mais informações</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal3" role="dialog">
+                        <div class="modal-dialog">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" style="color: #7724DA">Esfoliante 180g</h4>
+                                    <button type="button" class="close" data-dismiss="modal"
+                                        style="color: #7724DA">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <span style="color: #ABB3B6">R$ 89,90</span>
+                                    <h5>Motivos para me levar pra casa:</h5>
+                                    <p style="color: #678486">Tenho ativos com ação emoliente e umectante, com
+                                        alto
+                                        poder de
+                                        hidratação. Redução a perda de água e retenho a hidratação natural.
+                                        Textura média e de rápida absorção. Ação prolongada, que dura até 48
+                                        horas.</p>
+                                    <span style="color: #ABB3B6">Em breve nas lojas</span>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default text-white"
+                                        data-dismiss="modal" style="background-color: #7724DA">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+
+
+
+
+
+
         </section>
 
 
@@ -55,20 +202,34 @@
             <p>Somos mais que uma sorveteria, somos uma fábrica de cria sonhos, que te gera momentos bons, é seu momento
                 de aproveitar a vida!</p>
         </section>
+
+        <div class="banner_produtos3">
+
+        </div>
     </main>
 
     <footer>
-        <div>
-            <img src="./img/logo.png"/>
+        <img src="./img/logo.png" />
 
-            <div class="fale_conosco">
-                <h3>Fale com a gente</h3>
-                
-                <p>+55 11 9999-9999</p>
-                <p>sac@lulu_sorveteria.com.br</p>
-            </div>
+        <div class="fale_conosco">
+            <h3>Fale com a gente</h3>
+
+            <p>+55 11 9999-9999</p>
+            <p>sac@lulu_sorveteria.com.br</p>
         </div>
     </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
