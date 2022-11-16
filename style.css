@@ -70,10 +70,11 @@ main {
     background-image: url("./img/banner1.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 .banner_produtos3 {
     width: 100%;
-    height: 400px;
+    height: 100%;
     background-image: url("./img/bannner5.png");
     background-position: center;
     background-size: cover;
@@ -91,8 +92,7 @@ main {
     justify-content: center;
     justify-items: center;
     align-items: center;
-
-    margin: 100px;
+    padding: 220px;
 }
 
 
@@ -239,23 +239,11 @@ footer img {
     }
 
 
-    .primeiro_banner {
-        width: 100%;
-        height: 500px;
-        background-image: url("./img/banner1\ cel.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
 
 
     .segundo_banner img {
-        display: flex;
-        align-items: center;
+        width: 500px;
         margin: 0 auto;
-        justify-content: center;
-        background-size: cover;
-        width: 100%;
-        padding: 70px;
     }
 
     .cardseparada {
@@ -265,14 +253,22 @@ footer img {
 
     .banner_produtos3 {
         width: 100%;
-        height: 800px;
+        height: 100%;
         background-image: url("./img/bannner5.png");
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
+        
     }
     
 
+    .banner_produtos3 p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        padding: 60px;
+    }
     .nossos_produtos h1 {
         font-weight: 700;
         font-size: 25px;
