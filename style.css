@@ -4,32 +4,32 @@
 * {
     padding: 0;
     margin: 0;
-    overflow-x : hidden;
+    overflow-x: hidden;
 }
 
 
 header {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
 }
 
 
 header img {
-    width: 280px;
+    width: 250px;
     margin: 0 auto;
-    padding: 50px;
+    padding: 30px;
 }
 
 header ul {
     display: flex;
     list-style: none;
-    margin: 0 auto;
+    align-items: center;
 }
 
 header li {
     cursor: pointer;
-    margin: 50px;
     font-family: 'Grandstander';
     font-style: normal;
     font-weight: 700;
@@ -37,6 +37,7 @@ header li {
     line-height: 30px;
     text-align: center;
     transition: 0.3s;
+    margin: 50px;
 
     /* identical to box height */
 
@@ -52,7 +53,7 @@ main {
     background-color: #FFE3E3;
 }
 
-.primeiro_banner img,
+
 .banner_produtos1 img {
     display: flex;
     width: 100%;
@@ -61,16 +62,24 @@ main {
     justify-content: center;
 }
 
+
+.primeiro_banner {
+    width: 100%;
+    height: 500px;
+    background-image: url("./img/banner1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .banner_produtos3 {
     width: 100%;
-    height: 800px;
+    height: 400px;
     background-image: url("./img/bannner5.png");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.banner_produtos3 p{
+.banner_produtos3 p {
     display: flex;
     font-family: 'Grandstander';
     font-style: normal;
@@ -82,7 +91,7 @@ main {
     justify-items: center;
     align-items: center;
 
-    margin: 200px;
+    margin: 100px;
 }
 
 
@@ -126,11 +135,12 @@ main {
     text-align: justify;
 }
 
-.cards{
+.cards {
     display: flex;
     justify-content: center;
     padding: 50px;
 }
+
 .quem_somos {
     background-color: #C55634;
     display: flex;
@@ -194,4 +204,140 @@ footer img {
     text-decoration-line: underline;
 
     color: #000000;
+}
+
+@media only screen and (max-width: 600px) {
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+    
+
+    header li {
+        cursor: pointer;
+        font-family: 'Grandstander';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        transition: 0.3s;
+        margin: 0 auto;
+        padding: 12px;
+
+        /* identical to box height */
+
+
+        color: rgba(197, 112, 52, 0.82);
+    }
+
+    header li:hover {
+        color: #7724DA;
+    }
+
+
+    .primeiro_banner {
+        width: 100%;
+        height: 500px;
+        background-image: url("./img/banner1\ cel.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .segundo_banner img {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: center;
+        background-size: cover;
+        width: 100%;
+        padding: 70px;
+    }
+
+    .cardseparada {
+        margin: 50px;
+    }
+
+
+    .banner_produtos3 {
+        width: 100%;
+        height: 1100px;
+        background-image: url("./img/bannner5.png");
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+
+    .nossos_produtos h1 {
+        font-weight: 700;
+        font-size: 35px;
+
+    }
+    
+    .nossos_produtos p {
+        width: 300px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 40px;
+        text-align: justify;
+    }
+
+
+    .quem_somos h2 {
+        font-weight: 700;
+        font-size: 35px;
+    }
+    
+    .quem_somos p {
+        width: 300px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 40px;
+        text-align: justify;
+    }
+
+
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    
+    }
+    
+    footer img {
+        width: 180px;
+        margin: 20px;
+    }
+    
+
+
+    .fale_conosco h3 {
+        font-family: 'Grandstander';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 70px;
+        /* identical to box height */
+        color: #7724DA;
+    }
+    
+    .fale_conosco p {
+        font-family: 'Grandstander';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 40px;
+        /* identical to box height */
+    
+        text-align: center;
+        text-decoration-line: underline;
+    
+        color: #000000;
+    }
 }
