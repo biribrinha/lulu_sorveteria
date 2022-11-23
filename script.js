@@ -15,15 +15,18 @@ ScrollReveal().reveal('.quarto', {
 });
 
 ScrollReveal().reveal('.quinto', {
-    delay: 580
+    delay: 580,
+    reset: true
 });
 
 ScrollReveal().reveal('.sexto', {
-    delay: 880
+    delay: 880,
+    reset: true
 });
 
 ScrollReveal().reveal('.setimo', {
-    delay: 1180
+    delay: 1180,
+    reset: true
 });
 
 ScrollReveal().reveal('.oitavo', {
