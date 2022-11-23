@@ -7,20 +7,26 @@
     overflow-x: hidden;
 }
 
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
 
 header {
+
+    background-color: #ffe3e3;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    background-color: #FFE3E3;
+    justify-content: center;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
 
 }
 
-
 header img {
-    width: 250px;
-    margin: 0 auto;
-    padding: 30px;
+    width: 100px;
 }
 
 header ul {
@@ -37,17 +43,17 @@ header li {
     font-size: 25px;
     line-height: 30px;
     text-align: center;
-    transition: 0.3s;
     margin: 50px;
+}
 
-    /* identical to box height */
-
-
+header li a {
+    transition: 0.3s;
     color: rgba(197, 112, 52, 0.82);
 }
 
-header li:hover {
+header a:hover {
     color: #7724DA;
+    text-decoration: none;
 }
 
 main {
@@ -63,6 +69,9 @@ main {
     justify-content: center;
 }
 
+.barra {
+    height: 110px;
+}
 
 .primeiro_banner {
     width: 100%;
@@ -208,7 +217,17 @@ footer img {
     color: #000000;
 }
 
+
+#nossosProdutos {
+    transition: 2s;
+}
+
 @media only screen and (max-width: 600px) {
+
+
+    header img {
+        width: 50px;
+    }
 
     header ul {
         display: flex;
@@ -222,7 +241,7 @@ footer img {
         font-family: 'Grandstander';
         font-style: normal;
         font-weight: 700;
-        font-size: 25px;
+        font-size: 20px;
         line-height: 30px;
         text-align: center;
         transition: 0.3s;
@@ -239,8 +258,12 @@ footer img {
         color: #7724DA;
     }
 
+    .barra {
+        height: 220px;
+    }
+
     .segundo_banner img {
-        width: 300px;
+        width: 480px;
         padding: 1em;
     }
 
