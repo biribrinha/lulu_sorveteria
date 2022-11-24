@@ -22,8 +22,11 @@
 </head>
 
 <body>
-    <header class="fixed-top ">
+
+    <header class="fixed-top">
+
         <div>
+            <span data-target="#luluModal" data-toggle="modal">quem é lulu?</span>
 
             <ul class="primeiro">
                 <img src="./img/logo.png" />
@@ -40,15 +43,73 @@
         </div>
 
     </header>
+
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="luluModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="color: #7724DA">QUEM É LULU</h4>
+                    <button type="button" class="close" data-dismiss="modal" style="color: #7724DA">&times;</button>
+                </div>
+                <div class="modal-body">
+
+
+
+                    <div id="table-container">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nome</th>
+                                    <th>Sobre</th>
+                                </tr>
+                                <tr style="background-color:  rgb(247, 196, 160);">
+                                    <td class="p-2">#1</td>
+                                    <td class="p-2">Lulu</td>
+                                    <td class="p-2">É uma empreendedora e filantropa. Ela é a fundadora, diretora
+                                        executiva e diretora técnica da Lulu sorveteria. </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default text-white" data-dismiss="modal"
+                        style="  background: rgba(197, 112, 52, 0.82); ">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
     <main id="home">
         <div class="barra">
-
         </div>
         <section class="primeiro_banner segundo">
         </section>
 
-        <section class="segundo_banner terceiro">
-            <img id="nossosProdutos" src="./img/bannner2.png" />
+        <section class="segundo_banner terceiro" id="nossosProdutos">
         </section>
         <section>
             <div class="nossos_produtos quarto">
