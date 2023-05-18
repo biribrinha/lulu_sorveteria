@@ -1,3 +1,3 @@
 # lulu_sorveteria
 
-https://juliabergman.github.io/lulu_sorveteria/
+https://biribrinha.github.io/lulu_sorveteria/
